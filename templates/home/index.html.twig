@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Nino's Portfolio{% endblock %}
+
+{% block body %}
+
+    <section class="min-vh-100 d-flex flex-column justify-content-center">
+
+        <div class="text-center mb-5">
+            <h1 class="text-light">
+                Hey,
+            </h1>
+
+            <h2 class="text-dark-emphasis">
+                Ik ben Nino Mathijsen
+            </h2>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h3 class="text-primary">
+                        Backend Developer <br>
+                        Met een vleugje infra
+                    </h3>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img
+                        src="{{ asset('images/my_pic.png') }}"
+                        alt="Nino Mathijsen"
+                        class="img-fluid rounded-circle"
+                        style="max-width: 300px;"
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center gap-3 mt-5">
+            <button class="btn btn-primary">
+                CV
+            </button>
+            <button class="btn btn-secondary">
+                Projecten
+            </button>
+        </div>
+    </section>
+{% endblock %}
+

@@ -1,5 +1,42 @@
+$color-background: #0d1117;
+$color-surface: #161b22;
+$color-border: #30363d;
+
+$color-text-primary: #e6edf3;
+$color-text-secondary: #8b949e;
+
+$color-primary: #3b82f6;
+$color-accent: #22d3ee;
+$color-success: #22c55e;
+
+$primary: $color-primary;
+$info: $color-accent;
+$success: $color-success;
+$light: $color-text-primary;
+$dark: $color-background;
+
+$font-body: 'Inter', sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @import "bootstrap/scss/bootstrap";
 
 body {
-    background-color: skyblue;
+    background-color: $color-background;
+    color: $color-text-primary;
+    font-family: $font-body;
+}
+
+code,
+pre,
+.command,
+.label {
+    font-family: $font-mono;
+}
+
+#box {
+    background-color: $color-accent;
+    width: 100px;
+    height: 100px;
 }
